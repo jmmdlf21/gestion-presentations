@@ -5,7 +5,6 @@ Colors
 background           : #fcfdff
 paler cornflowerblue : #A3C3FF
 cornflowerblue       : #6495ED
-horer links          : #0059ff
 
 */
 
@@ -29,9 +28,6 @@ li {
 	list-style: none;
 }
 
-p { 
-	margin-top: 50px
-}
 
 #wrapper {
 	margin: 20px auto;
@@ -80,19 +76,31 @@ h5, h6 {
 }
 
 [data-action] {
-	color: cornflowerblue;
 	cursor: pointer;
+	background-color: #A3C3FF;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 10px;		
 }
 
 [data-action]:hover {
-	color: blue;
 	text-decoration: underline;
+	background-color: cornflowerblue;
+}
+
+#wrapper h1 {	
+	margin: 100px 0 80px;
+}
+
+#wrapper h2 {
+	margin: 80px 0 40px;
 }
 
 #wrapper h3 {	
 	padding: 20px 0 20px 20px;
 	border: 1px solid black;
 	background-color: cornflowerblue;
+	clear: both;
 }
 
 #wrapper h3, #wrapper h4 {
@@ -105,6 +113,7 @@ h5, h6 {
 }
 
 #wrapper h4 {
+	clear: both;
 	padding: 20px 0 20px 20px;
 }
 
@@ -113,12 +122,20 @@ h5, h6 {
 }
 
 .modifier {
-	padding-right: 20px;
+	margin-right: 40px;
 }
 
-.modifier:hover, .modifier:hover , .supprimer:hover  {
-	color: #0059ff;
+.modifier, .supprimer {
+	font-size: 1.2em;
+	margin: 0 0 40px 50px;
+	display: block;
+	float: left;
 }
+
+.modifier:hover, .supprimer:hover {
+	
+}
+
 
 .presentation h5 {
 	margin: 40px 0 40px 60px;
@@ -126,7 +143,7 @@ h5, h6 {
 
 .presentation h6 {
 	display: inline;
-	margin: 0 60px 0 60px;
+	margin: 0 80px 0 60px;
 }
 
 .presentation h5, .presentation h6, .presentation span {
