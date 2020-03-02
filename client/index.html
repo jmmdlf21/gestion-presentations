@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Gestion des Présentations</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="lib/jquery-3.4.1.min.js"></script>
+	<script src="lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	window.addEventListener("load", function() { 
+		$.get({url:'templates.html', cache: false}).
+		done((data) => {
+			$('#templates').html(data);
+			gestionPresentations.listerPresentations();
+		});
+	});
+  </script>
+</head>
+<body>
+	<p id="erreur"></p>
+	<div id="wrapper"></div>
+	<div id="templates"></div>
+</body>
+</html>

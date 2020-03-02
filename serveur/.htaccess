@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /tp2/serveur/
+RewriteRule ^.*php$ index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]

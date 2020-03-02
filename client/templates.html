@@ -1,0 +1,114 @@
+<!--  Template liste des présentations
+	  ==========================
+-->	
+
+<template id="t-presentationsListe">
+	<h1>Gestion des présentations</h1>
+	<p id="ret">&nbsp;</p>
+	<p><span class="ajouter" data-action="ajouter">Ajouter une presentation</span></p>
+	<h2>Thématiques</h2>
+	<div class="accordion" id="accordionThematiques">
+	</div>
+</template>
+
+
+<!--  Template formulaire d'ajout d'une présentation
+	  =======================================
+-->
+<template id="t-presentationAjout">
+	<h2>Ajout d'une presentation</h2>
+	<section id="presentationAjout">
+		<form name="frm" action="">
+
+			<label>Titre</label>
+			<input type="text" name="titre">
+			<span id="titre_err"></span>
+
+			<label>Description</label>
+			<input type="text" name="resume">
+			<span id="resume_err"></span>
+
+			<label>Thématique</label>
+			<input type="text" name="thematique">
+			<span id="thematique_err"></span>
+
+			<label>Date</label>
+			<input type="text" name="date" placeholder="AAAA-MM-JJ">
+			<span id="date_err"></span>
+
+			<label>Heure de Debut</label>
+			<input type="text" name="heure_debut" placeholder="HH:MM:SS">
+			<span id="heure_debut_err"></span>
+
+			<label>Heure de Fin</label>
+			<input type="text" name="heure_fin" placeholder="HH:MM:SS">
+			<span id="heure_fin_err"></span>
+			
+			<label>Salle</label>
+			<input type="text" name="salle">
+			<span id="salle_err"></span>
+			
+			<label>Presentateur</label>
+			<input type="text" name="presentateur">
+			<span id="presentateur_err"></span>
+			
+			<label>Institution</label>
+			<input type="text" name="institution">
+			<span id="institution_err"></span>			
+
+			<input type="button" id="bValider" value="Valider">
+		</form>
+	</section>
+</template>
+
+
+<!--  Template formulaire de modification d'une présentation
+	  ===============================================
+-->
+<template id="t-presentationModification">
+
+
+	<h2>Modification d'une présentation</h2>
+	<section id="presentationAjout">
+		<form name="frm" action="">
+
+			<label>Titre</label>
+			<input type="text" name="titre" value="${p.titre}">
+			<span id="titre_err"></span>
+
+			<label>Description</label>
+			<input type="text" name="resume" value="${p.resume}">
+			<span id="resume_err"></span>
+
+			<label>Thématique</label>
+			<input type="text" name="thematique" value="${p.thematique}">
+			<span id="thematique_err"></span>
+
+			<label>Date</label>
+			<input type="text" name="date" value="${p.date}">
+			<span id="date_err"></span>
+
+			<label>Heure de Debut</label>
+			<input type="text" name="heure_debut" value="${p.heure_debut}">
+			<span id="heure_debut_err"></span>
+
+			<label>Heure de Fin</label>
+			<input type="text" name="heure_fin" value="${p.heure_fin}">
+			<span id="heure_fin_err"></span>
+			
+			<label>Salle</label>
+			<input type="text" name="salle" value="${p.salle}">
+			<span id="salle_err"></span>
+			
+			<label>Presentateur</label>
+			<input type="text" name="presentateur" value="${p.presentateur}">
+			<span id="presentateur_err"></span>
+			
+			<label>Institution</label>
+			<input type="text" name="institution" value="${p.institution}">
+			<span id="institution_err"></span>			
+
+			<input type="button" id="bValider" value="Valider">
+		</form>
+	</section>
+</template>
