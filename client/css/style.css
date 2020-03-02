@@ -2,8 +2,10 @@
 
 Colors
 
-paler cornflowerblue: #A3C3FF
-cornflowerblue:       #6495ED
+background           : #fcfdff
+paler cornflowerblue : #A3C3FF
+cornflowerblue       : #6495ED
+horer links          : #0059ff
 
 */
 
@@ -110,8 +112,12 @@ h5, h6 {
 	background-color: #A3C3FF;
 }
 
-.presentation span:nth-child(3) {
+.modifier {
 	padding-right: 20px;
+}
+
+.modifier:hover, .modifier:hover , .supprimer:hover  {
+	color: #0059ff;
 }
 
 .presentation h5 {

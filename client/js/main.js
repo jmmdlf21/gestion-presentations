@@ -210,9 +210,9 @@ let gestionPresentations = function() {
 										htmlMess +=   "<div class='presentation'>";
 										htmlMess +=     "<h5><span>Presenté le </span>"+c.date+"</h5>";										
 										htmlMess +=     "<h6>"+c.resume+"</h6>";
-										htmlMess +=     "<span data-action='modifier'";  
+										htmlMess +=     "<span class='modifier' data-action='modifier'";  
 										htmlMess +=     "data-id='"+c.id_presentation+"'>Modifier</span>";
-										htmlMess +=     "<span data-action='supprimer'"; 
+										htmlMess +=     "<span class='supprimer' data-action='supprimer'"; 
 										htmlMess +=     "data-id='"+c.id_presentation+"'>Supprimer</span>";
 										htmlMess +=     "<h5><span>De </span>"+c.heure_debut;
 										htmlMess +=     "<span> À </span>"+c.heure_fin+"</h5>";	
